@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	padding: 0
+}
+
+.todo-content{
+	display: flex;
+	flex-direction: column-reverse;
+	width: 600px;
+	background-color: #dfe3e6;
+	padding: 10px;
+	border-radius: 4px;
+	margin: 5px;
+	box-shadow: 0px 0px 10px #000000;
+	overflow-x: hidden;
+}
+
+.todo-form {
+	width: 100%;
+	display: flex;
+	box-shadow: 0px 0px 10px #000000;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.todo-form>input[type='text']{
+	flex: 1;
+	border: none;
+	outline: none;
+	padding: 8px;
+}
+
+.todo-form>input[type='submit']{
+	border: none;
+	background-color: #5aac44;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 6px 8px;
+}
+
+.todo-form>input[type='submit']:hover{
+	background-color: #519839;
+}
+
+.todo-content ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.todo-content ul li{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.todo-content ul li span.text{
+	width: 400px;
+	background: #ffffff;
+	box-shadow: 0px 0px 10px #000000;
+	border-radius: 4px;
+	padding: 5px;
+	color: #519839;
+	font-size: 18px;
+}
+
+.todo-content ul li a{
+	padding: 6px 8px;
+	color: #ffffff;
+}
+
+.todo-content ul li a.edit, .todo-content ul li a.delete{
+	background: blue;
+	color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0px 0px 10px #000000;
+	text-shadow: 1px 1px 1px #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.todo-content ul li a.delete{
+	background: red;
+}
+
+.todo{
+	display: flex;
+	justify-content: start;
+	color: #000000;
+	font-style: bold;
+}
+
+.todo span{
+	margin: 5px;
+	font-size: 25px;
+}
+
+.todo span.count{
+	color: red;
+	text-shadow: 1px 1px 1px #000000;
+}
